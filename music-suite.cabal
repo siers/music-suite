@@ -377,7 +377,7 @@ test-suite "music-suite-patterns"
 
 -- Examples:
 
-executable "music-suite-examples-mozart"
+executable "music-suite-examples-exploratory"
     build-depends:      base,
                         music-suite,
                         lens,
@@ -385,7 +385,7 @@ executable "music-suite-examples-mozart"
                         recursion-schemes
     hs-source-dirs:     examples
     -- ghc-options:        -fno-code
-    main-is:            mozart.hs
+    main-is:            exploratory.hs
 
 -- executable "music-suite-examples-analysis"
 --     build-depends:      base,
