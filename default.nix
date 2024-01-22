@@ -41,18 +41,20 @@ in
 pkgs.stdenv.mkDerivation {
   name = "music-suite";
   buildInputs = [
-
     pkgs.lilypond
     pkgs.timidity
     pkgs.cabal-install
     pkgs.haskellPackages.hasktags
+    pkgs.haskell-language-server
     pkgs.haskell.packages.ghc884.ormolu
+    pkgs.haskell.packages.ghc884.implicit-hie
     (
     pkgs.haskellPackages.ghcWithPackages (pkgs:
-        [
-          pkgs.pandoc
-          pkgs.ormolu
-        ])
+      [
+        pkgs.pandoc
+        pkgs.ormolu
+        pkgs.implicit-hie
+      ])
     )
    ];
   shellHook = ''

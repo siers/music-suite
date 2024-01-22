@@ -1,0 +1,118 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "lib:music-suite"
+
+    - path: "./vendor"
+      component: "lib:music-suite"
+
+    - path: "./test"
+      component: "music-suite:test:music-suite-test-umts"
+
+    - path: "./test"
+      component: "music-suite:test:music-suite-test-laws"
+
+    - path: "./test"
+      component: "music-suite:test:music-suite-test-regression"
+
+    - path: "./test"
+      component: "music-suite:test:music-suite-test-xml-parser"
+
+    - path: "./test"
+      component: "music-suite:test:music-suite-patterns"
+
+    - path: "./examples/analysis.hs"
+      component: "music-suite:exe:music-suite-examples-analysis"
+
+    - path: "./examples/AnalysisDurations.hs"
+      component: "music-suite:exe:music-suite-examples-analysis-durations"
+
+    - path: "./examples/annotations.hs"
+      component: "music-suite:exe:music-suite-examples-annotations"
+
+    - path: "./examples/bartok.hs"
+      component: "music-suite:exe:music-suite-examples-bartok"
+
+    - path: "./examples/behavior.hs"
+      component: "music-suite:exe:music-suite-examples-behavior"
+
+    - path: "./examples/canon.hs"
+      component: "music-suite:exe:music-suite-examples-canon"
+
+    - path: "./examples/chopin.hs"
+      component: "music-suite:exe:music-suite-examples-chopin"
+
+    - path: "./examples/duo.hs"
+      component: "music-suite:exe:music-suite-examples-duo"
+
+    - path: "./examples/chords.hs"
+      component: "music-suite:exe:music-suite-examples-chords"
+
+    - path: "./examples/fugue1.hs"
+      component: "music-suite:exe:music-suite-examples-fugue1"
+
+    - path: "./examples/mozart.hs"
+      component: "music-suite:exe:music-suite-examples-mozart"
+
+    - path: "./examples/part.hs"
+      component: "music-suite:exe:music-suite-examples-part"
+
+    - path: "./examples/phrases.hs"
+      component: "music-suite:exe:music-suite-examples-phrases"
+
+    - path: "./examples/hello.hs"
+      component: "music-suite:exe:music-suite-examples-hello"
+
+    - path: "./examples/StudyForHarp.hs"
+      component: "music-suite:exe:music-suite-examples-study-for-harp"
+
+    - path: "./examples/TimeSignatures.hs"
+      component: "music-suite:exe:music-suite-examples-time-signatures"
+
+    - path: "./examples/dynamics.hs"
+      component: "music-suite:exe:music-suite-examples-dynamics"
+
+    - path: "./examples/trio.hs"
+      component: "music-suite:exe:music-suite-examples-trio"
+
+    - path: "./examples/tuplet.hs"
+      component: "music-suite:exe:music-suite-examples-tuplet"
+
+    - path: "./examples/klangfarben.hs"
+      component: "music-suite:exe:music-suite-examples-klangfarben"
+
+    - path: "./examples/chorale.hs"
+      component: "music-suite:exe:music-suite-examples-chorale"
+
+    - path: "./examples/piano1.hs"
+      component: "music-suite:exe:music-suite-examples-piano1"
+
+    - path: "./examples/piano2.hs"
+      component: "music-suite:exe:music-suite-examples-piano2"
+
+    - path: "./examples/HarpStringTexture.hs"
+      component: "music-suite:exe:music-suite-examples-harp-string-texture"
+
+    - path: "./examples/pieces/Piece3.hs"
+      component: "music-suite:exe:music-suite-examples-piece3"
+
+    - path: "./examples/pieces/Ambitus/Score.hs"
+      component: "music-suite:exe:music-suite-examples-ambitus"
+
+    - path: "./examples/pieces/WindsPhrasing/Score.hs"
+      component: "music-suite:exe:music-suite-examples-winds-phrasing"
+
+    - path: "./examples/pieces/SustainPunctuated/Score.hs"
+      component: "music-suite:exe:music-suite-examples-sustain-punctuated"
+
+    - path: "./examples/pieces/Piece8.hs"
+      component: "music-suite:exe:music-suite-examples-piece8"
+
+    - path: "./examples/pieces/BrassLargeEnsemble/Score.hs"
+      component: "music-suite:exe:music-suite-examples-brass-large-ensemble"
+
+    - path: "./examples/pieces/SalientMelodicTransformations/Score.hs"
+      component: "music-suite:exe:music-suite-examples-salient-melodic-transformations"
+
+    - path: "./doc-tools/doctester/src/Main.hs"
+      component: "music-suite:exe:doctester"

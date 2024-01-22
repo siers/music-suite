@@ -166,5 +166,6 @@ constraints: any.Boolean ==0.2.4,
              void -safe,
              any.wcwidth ==0.0.2,
              wcwidth -cli +split-base,
+             recursion-schemes -examples,
              any.xml ==1.3.14
 index-state: hackage.haskell.org 2021-12-24T16:25:00Z
