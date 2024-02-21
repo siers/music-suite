@@ -1,16 +1,5 @@
-
-let
-  opts = {
-    packageOverrides = pkgs: rec {
-      haskellPackages = pkgs.haskellPackages.override {
-        overrides = haskellPackagesNew: haskellPackagesOld: rec {
-          # No overrides
-        };
-      };
-    };
-  };
-
-  addOrmulo =  (
+{
+  addOrmulo ? (
     # This overlay adds Ormolu straight from GitHub.
     self: super:
 
@@ -29,14 +18,22 @@ let
           };
         };
       };
-    });
-
-  pkgs = import (builtins.fetchTarball {
+  }),
+  opts ? {
+    packageOverrides = pkgs: rec {
+      haskellPackages = pkgs.haskellPackages.override {
+        overrides = haskellPackagesNew: haskellPackagesOld: rec {
+          # No overrides
+        };
+      };
+    };
+  },
+  pkgs ? import (builtins.fetchTarball {
     url = https://github.com/nixos/nixpkgs/archive/1158f3463912d54cc981d61213839ec6c02570d3.tar.gz;
     # Hash obtained using `nix-prefetch-url --unpack <url>`
     sha256 = "1v94p8mn3kw3yq79jhmrg0a7zam34v9pvx1sz534y737k2cwbx41";
-  }) { config = opts; overlays = [ addOrmulo ]; };
-in
+  }) { config = opts; overlays = [ addOrmulo ]; }
+}:
 
 pkgs.stdenv.mkDerivation {
   name = "music-suite";
